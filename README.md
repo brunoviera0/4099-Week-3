@@ -8,11 +8,17 @@ A GitHub repository is a storage space where your project's files are in one cen
 The following are the essential git commands you must know to be able to utilize a repository:
 
 git init: create a repository in the current directory
+
 git clone <url>: downloads a repository from an outside source onto your machine
+
 git add <file>: stages changes to be made, specific file
+
 git add .: stages changes to be made, everything
+
 git commit -m "Message": Record changes made
+
 git push origin <branch>: moves your changes onto a branch in the repo, main is the default
+
 git pull origin <branch>: merges changes made to the branch into your current workspace, main for default
 
 
