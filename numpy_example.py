@@ -1,5 +1,5 @@
-#import pandas library
-import pandas as pd
+#import numpy library
+import numpy as np
 
 #customer details
 name = input("Name: ")
