@@ -1,26 +1,29 @@
 #import pandas library
 import pandas as pd
 
-#invoice data
+#customer details
+name = input("Name: ")
+address = input("Address: ")
+
+#item data, name and price
 data = {
-    'ID': [1, 2, 3, 4],
-    'Name': ['Alice', 'Bob', 'Charlie', 'Alice'],
-    'Amount': [50, 30, 20, 40],
-    'Status': ['Paid', 'Unpaid', 'Paid', 'Unpaid']
+    'Item': ['Plates', 'Cups'],
+    'Price': [2, 4]
 }
+df = pd.DataFrame(data) #dataframe
 
-#create a data frame
-df = pd.DataFrame(data)
+#quantities
+num_plates = int(input("How many plates? "))
+num_cups = int(input("How many cups? "))
 
-#find the total invoice amount
-total_amount = df['Amount'].sum()
-print(f'Total Invoice Amount: ${total_amount}')
+#add quantities to the DataFrame
+df['Quantity'] = [num_plates, num_cups]
 
-#find the average invoice amount
-average_amount = df['Amount'].mean()
-print(f'Average Invoice Amount: ${average_amount:.2f}')
+#calculate total for each item and overall total
+df['Total'] = df['Price'] * df['Quantity']
+total_cost = df['Total'].sum()
 
-#unpaid invoices
-unpaid_invoices = df[df['Status'] == 'Unpaid']
-print('Unpaid Invoices:')
-print(unpaid_invoices)
+#results
+print(f"\n{name}\n{address}")
+print(df[['Item', 'Quantity', 'Total']])
+print(f"Amount Due = ${total_cost}")

@@ -1,12 +1,27 @@
-This is the repository we will be using to create our Python and Github primer.
+CSE-4099 Week3 (GitHub Primer, Python, and Validation)
 
 GitHub Tutorial:
-This will serve as a quick startup guide in setting up and using a github repo.\
+This will serve as a quick user guide to using a github repo.
+
+A GitHub repository is a storage space where your project's files are in one centralized location, allowing you to manage and share code with collaborators. 
+
+The following are the essential git commands you must know to be able to utilize a repository:
+
+git init: create a repository in the current directory
+git clone <url>: downloads a repository from an outside source onto your machine
+git add <file>: stages changes to be made, specific file
+git add .: stages changes to be made, everything
+git commit -m "Message": Record changes made
+git push origin <branch>: moves your changes onto a branch in the repo, main is the default
+git pull origin <branch>: merges changes made to the branch into your current workspace, main for default
+
 
 Python Examples:
 
-Numpy Example-
+Numpy & Pandas Example- The library pandas pandas is useful because it allows for handling and manipulation of tabular data. Pandas allows you to store data in a structured format using DataFrames. With pandas, you can quickly perform operations on your data like addition, multiplication, or filtering.
 
-Pandas Example-
+Numpy is another library very similar to pandasit, allowing for efficient data manipulation as well but its main use case involves multi-dimensional arrays and vectorized operations, which are faster and more efficient than using standard Python loops.
+
+First write a Python program "pandas_example.py" that uses the pandas library to manage a dataset of items, including prices and the quantities purchased by a customer. Your program should prompt the user for their name and address, along with the number of plates and cups they wish to purchase. Store the item prices and quantities in a pandas DataFrame, display a summary of the customer's purchase, including the total due. Lastly, repeat the same process, this time writing the program "numpy_example.py", solving the same prompt using the numpy library, store your data in numpy arrays instead of a pandas DataFrame.
 
 Matplotlab-
