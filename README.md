@@ -36,9 +36,8 @@ Matplotlab-
 
 
 
-
-
-#validations using HTML and Flask:
+#validations 
+using HTML and Flask:
 
 Project: Address and Password Validator
 This project provides an address and password validation system using Flask and client-side JavaScript validation. The application gives HTML forms to the user and validates the input using Javascript before submitting the form. if requirements are met the validated data is then returned and displayed on the same form page.
